@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobery - Supere Seus Vícios</title>
+    <link rel="stylesheet" href="css/principal/estilo.css">
+</head>
+
+<body>
+    <div id="conteiner">
+
+        <header class="cabecalho">
+            <img id="estrela" src="conteudo/imagens/estrela.jpg" alt="Estrela">
+
+            <input type="checkbox" id="theme-toggle">
+            <label for="theme-toggle" class="theme-label">
+                <span class="theme-button">
+                    <span class="brazil-flag"></span>
+                </span>
+            </label>
+
+            <input type="checkbox" id="language-toggle">
+            <label for="language-toggle" class="language-label">
+                <span class="language-button">
+                    <span class="usa-flag"></span>
+                </span>
+            </label>
+
+            <img src="conteudo/imagens/logo.png" alt="Logo Sobery" class="logo">
+            <h1 class="titulo">Sobery</h1>
+            <p class="slogan">Mude seus hábitos <span class="otroslogan">mude de vida!</span></p>
+            <nav id="nav">
+           
+            </nav>
+        </header>
+
+        <main>
+            <section id="sobre" class="secao-sobre">
+                <h2></h2>
+                <div class="conteudo-container">
+                    <p id="primeirafala">Comece hoje na Sobery para mudar seus hábitos e transformar sua vida. Superar
+                        vícios é possível com o apoio certo e a força de vontade. Dê o primeiro passo agora e descubra
+                        como uma vida mais saudável está ao seu alcance</p>
+                    <a href="/conteudo/transição.html">
+                        <button class="btn-comecar">Começar</button>
+                    </a>
+                </div>
+            </section>
+
+            <section id="motivacao" class="secao-motivacao">
+                <h2 id="Encontre Motivação">Encontre Motivação</h2>
+                <div class="conteudo-container">
+                    <p>Mudar é difícil, mas encontrar a motivação certa pode fazer toda a diferença. Aqui, você
+                        encontrará inspiração e dicas práticas para começar sua jornada.</p>
+                </div>
+            </section>
+
+            <h2 id="oqueensinamos">O que Ensinamos</h2>
+            <div class="dicas-container">
+                <article class="dica">
+                    <h3>Identifique os Gatilhos</h3>
+                    <p>Entender os momentos em que você se sente mais tentado a ceder é o primeiro passo.</p>
+                </article>
+                <article class="dica">
+                    <h3>Estabelecer Novos Hábitos</h3>
+                    <p>Substitua os hábitos nocivos por práticas saudáveis e construtivas.</p>
+                </article>
+                <article class="dica">
+                    <h3>Criar uma Rede de Apoio</h3>
+                    <p>Rodeie-se de pessoas que apoiam sua decisão de mudar e que possam ajudar em momentos difíceis.
+                    </p>
+                </article>
+            </div>
+        </main>
+
+        <footer class="rodape">
+            <p>&copy; 2024 Sobery. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+
+
+<script>
+    const checkbox = document.getElementById("theme-toggle");
+    const image = document.getElementById("estrela");
+
+    checkbox.addEventListener("change", () => {
+        if (checkbox.checked) {
+            image.src = "/conteudo/imagens/sol.jpg";
+            image.style.width = "1200px";
+            image.style.height = "65w0px";
+            image.style.animation = "none";
+        } else {
+            image.src = "/conteudo/imagens/estrela.jpg";
+            image.style.width = "";
+            image.style.height = "";
+            image.style.animation = "moveEstrela 35s alternate infinite linear;";
+        }
+
+
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+    const languageToggle = document.getElementById('language-toggle');
+
+    const textMapping = {
+        '.slogan': {
+            pt: 'Mude seus hábitos, mude de vida!',
+            en: 'Change your habits, change your life!'
+        },
+        'h1.titulo': {
+            pt: 'Sobery',
+            en: 'Sobery'
+        },
+        'h2#Encontre\\ Motivação': {
+            pt: 'Encontre Motivação',
+            en: 'Find Motivation'
+        },
+        '#primeirafala': {
+            pt: 'Comece hoje na Sobery para mudar seus hábitos e transformar sua vida. Superar vícios é possível com o apoio certo e a força de vontade. Dê o primeiro passo agora e descubra como uma vida mais saudável está ao seu alcance',
+            en: 'Start today at Sobery to change your habits and transform your life. Overcoming addictions is possible with the right support and willpower. Take the first step now and discover how a healthier life is within your reach'
+        },
+        '.secao-motivacao p': {
+            pt: 'Mudar é difícil, mas encontrar a motivação certa pode fazer toda a diferença. Aqui, você encontrará inspiração e dicas práticas para começar sua jornada.',
+            en: 'Change is hard, but finding the right motivation can make all the difference. Here, you will find inspiration and practical tips to start your journey.'
+        },
+        '#oqueensinamos': {
+            pt: 'O que Ensinamos',
+            en: 'What We Teach'
+        },
+        '.dica:nth-child(1) h3': {
+            pt: 'Identifique os Gatilhos',
+            en: 'Identify Triggers'
+        },
+        '.dica:nth-child(1) p': {
+            pt: 'Entender os momentos em que você se sente mais tentado a ceder é o primeiro passo.',
+            en: 'Understanding the moments when you feel most tempted to give in is the first step.'
+        },
+        '.dica:nth-child(2) h3': {
+            pt: 'Estabelecer Novos Hábitos',
+            en: 'Establish New Habits'
+        },
+        '.dica:nth-child(2) p': {
+            pt: 'Substitua os hábitos nocivos por práticas saudáveis e construtivas.',
+            en: 'Replace harmful habits with healthy and constructive practices.'
+        },
+        '.dica:nth-child(3) h3': {
+            pt: 'Criar uma Rede de Apoio',
+            en: 'Create a Support Network'
+        },
+        '.dica:nth-child(3) p': {
+            pt: 'Rodeie-se de pessoas que apoiam sua decisão de mudar e que possam ajudar em momentos difíceis.',
+            en: 'Surround yourself with people who support your decision to change and who can help during difficult times.'
+        },
+        '.btn-comecar': {
+            pt: 'Começar',
+            en: 'Start'
+        },
+        '.rodape p': {
+            pt: '© 2024 Sobery. Todos os direitos reservados.',
+            en: '© 2024 Sobery. All rights reserved.'
+        }
+
+    };
+
+    function updateTexts() {
+        const lang = languageToggle.checked ? 'en' : 'pt';
+        for (const selector in textMapping) {
+            const element = document.querySelector(selector);
+            if (element) {
+                element.textContent = textMapping[selector][lang];
+            }
+        }
+    }
+
+    languageToggle.addEventListener('change', updateTexts);
+
+    updateTexts();
+});
+
+
+
+
+
+
+</script>

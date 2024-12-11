@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vício em Apostas</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <ul>
+                <li><a id="menu-inicio" href="/index.html">Início</a></li>
+                <li><a id="menu-sobrenos" href="sobrenos.html">Sobre Nós</a></li>
+                <li><a id="menu-alcool" href="alcool.html">Vício em Álcool</a></li>
+                <li><a id="menu-cigarro" href="cigarro.html">Vício em Cigarro</a></li>
+                <li><a id="menu-apostas" href="apostas.html">Vício em Apostas</a></li>
+                <li><a id="menu-drogas" href="drogas.html">Vício em Drogas</a></li>
+                <li><a id="menu-redes" href="redes-sociais.html">Vício em Redes Sociais</a></li>
+                <li><a id="menu-referencias" href="referencias.html">Referências</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="apostas">
+        <div class="container">
+            <button id="translateButton">Mudar Idioma</button>
+            <h1 id="tit-apostas">Vício em Apostas</h1>
+            <p id="desc-vicio-apostas">O vicio em apostas ocorre principalmente pelo pensamento de "dinheiro fácil" incentivado por muitos influenciadores digitais e pela facilidade de jogar. A condição estimula o cérebro devido ao alto nivel de dopamina liberada devido ao ganho insignificante de dinheiro em comparação ao que foi perdido, tornando o ato compulsivo. </p>
+            
+            <div class="content">
+                <img src="imagens/apostas real.jpeg" alt="Efeitos das Apostas" class="imagem-apostas">
+                <div class="texto">
+                    <h2 id="maleficios-apostas">Malefícios das Apostas</h2>
+                    <p id="p1-malef-apostas">- Perda financeira garantida;</p>
+                    <p id="p2-malef-apostas">- Dificuldades nos relacionamentos familiares;</p>
+                    <p id="p3-malef-apostas">- Estado mental em crise;</p>
+                    <p id="p4-malef-apostas">- Aumento da ansiedade e estresse gerado pela perda;</p>
+                    <p id="p5-malef-apostas">- Comportamento compulsivo por conta da esperança de "ganhar".</p>
+
+                    <h2 id="efeitos-apostas">Efeitos no Cérebro</h2>
+                    <p id="p1-efeitos-apostas">- Estímulo incessante de dopamina;</p>
+                    <p id="p2-efeitos-apostas">- Falta de controle sobre as decisões e emoções;</p>
+                    <p id="p3-efeitos-apostas">- Dependência da sensação de conquista;</p>
+                    <p id="p4-efeitos-apostas">- Impulsividade e pressa aumentada;</p>
+                    <p id="p5-efeitos-apostas">- Risco de desenvolvimento de outros vícios;</p>
+                    <p id="p6-efeitos-apostas">- Falta de noção dos riscos.</p>
+
+                    <h2 id="parar-apostar">Como Parar de Apostar</h2>
+                    <p id="p1-parar-apostar">- Reconhecer o problema e buscar apoio de familiares e amigos;</p>
+                    <p id="p2-parar-apostar">- Evitar lugares ou situações que incentivem apostas como cassinos;</p>
+                    <p id="p3-parar-apostar">- Participar de grupos de apoio;</p>
+                    <p id="p4-parar-apostar">- Retirar todo o dinheiro de plataformas de apostas;</p>
+                    <p id="p5-parar-apostar">- Conversar com pessoas que superaram o mesmo problema, pedindo dicas e desabafando;</p>
+                    <p id="p6-parar-apostar">- Buscar ajuda profissional de psicólogos e terapeutas;</p>
+                    <p id="p7-parar-apostar">- Desenvolver novos hábitos, como separar o dinheiro que você apostava em um mês e depositá-lo em algum fundo de investimentos.</p>
+                    <p id="p8-parar-apostar">- Realizar atividades que te façam esquecer da possibilidade de apostar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer>
+        <p id="direitos-apostas"> 2024 - Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        // Selecionando o botão de tradução e os elementos a serem traduzidos
+const translateButton = document.getElementById("translateButton");
+
+const elementsToTranslate = {
+
+    
+    "tit-apostas": {
+        pt: "Vício em Apostas",
+        en: "Gambling Addiction"
+    },
+    "desc-vicio-apostas": {
+        pt: "O vicio em apostas ocorre principalmente pelo pensamento de 'dinheiro fácil' incentivado por muitos influenciadores digitais e pela facilidade de jogar. A condição estimula o cérebro devido ao alto nivel de dopamina liberada devido ao ganho insignificante de dinheiro em comparação ao que foi perdido, tornando o ato compulsivo.",
+        en: "Gambling addiction mainly occurs due to the thought of 'easy money' encouraged by many digital influencers and the ease of playing. This condition stimulates the brain due to the high level of dopamine released from the insignificant gain compared to what was lost, making the act compulsive."
+    },
+    "maleficios-apostas": {
+        pt: "Malefícios das Apostas",
+        en: "Harmful Effects of Gambling"
+    },
+    "p1-malef-apostas": {
+        pt: "- Perda financeira garantida;",
+        en: "- Guaranteed financial loss;"
+    },
+    "p2-malef-apostas": {
+        pt: "- Dificuldades nos relacionamentos familiares;",
+        en: "- Difficulties in family relationships;"
+    },
+    "p3-malef-apostas": {
+        pt: "- Estado mental em crise;",
+        en: "- Mental state in crisis;"
+    },
+    "p4-malef-apostas": {
+        pt: "- Aumento da ansiedade e estresse gerado pela perda;",
+        en: "- Increased anxiety and stress caused by loss;"
+    },
+    "p5-malef-apostas": {
+        pt: "- Comportamento compulsivo por conta da esperança de 'ganhar'.",
+        en: "- Compulsive behavior due to the hope of 'winning'."
+    },
+    "efeitos-apostas": {
+        pt: "Efeitos no Cérebro",
+        en: "Effects on the Brain"
+    },
+    "p1-efeitos-apostas": {
+        pt: "- Estímulo incessante de dopamina;",
+        en: "- Unceasing dopamine stimulation;"
+    },
+    "p2-efeitos-apostas": {
+        pt: "- Falta de controle sobre as decisões e emoções;",
+        en: "- Lack of control over decisions and emotions;"
+    },
+    "p3-efeitos-apostas": {
+        pt: "- Dependência da sensação de conquista;",
+        en: "- Dependency on the sense of achievement;"
+    },
+    "p4-efeitos-apostas": {
+        pt: "- Impulsividade e pressa aumentada;",
+        en: "- Increased impulsivity and haste;"
+    },
+    "p5-efeitos-apostas": {
+        pt: "- Risco de desenvolvimento de outros vícios;",
+        en: "- Risk of developing other addictions;"
+    },
+    "p6-efeitos-apostas": {
+        pt: "- Falta de noção dos riscos.",
+        en: "- Lack of risk awareness."
+    },
+    "parar-apostar": {
+        pt: "Como Parar de Apostar",
+        en: "How to Stop Gambling"
+    },
+    "p1-parar-apostar": {
+        pt: "- Reconhecer o problema e buscar apoio de familiares e amigos;",
+        en: "- Acknowledge the problem and seek support from family and friends;"
+    },
+    "p2-parar-apostar": {
+        pt: "- Evitar lugares ou situações que incentivem apostas como cassinos;",
+        en: "- Avoid places or situations that encourage gambling, like casinos;"
+    },
+    "p3-parar-apostar": {
+        pt: "- Participar de grupos de apoio;",
+        en: "- Join support groups;"
+    },
+    "p4-parar-apostar": {
+        pt: "- Retirar todo o dinheiro de plataformas de apostas;",
+        en: "- Withdraw all money from gambling platforms;"
+    },
+    "p5-parar-apostar": {
+        pt: "- Conversar com pessoas que superaram o mesmo problema, pedindo dicas e desabafando;",
+        en: "- Talk to people who have overcome the same problem, asking for tips and venting;"
+    },
+    "p6-parar-apostar": {
+        pt: "- Buscar ajuda profissional de psicólogos e terapeutas;",
+        en: "- Seek professional help from psychologists and therapists;"
+    },
+    "p7-parar-apostar": {
+        pt: "- Desenvolver novos hábitos, como separar o dinheiro que você apostava em um mês e depositá-lo em algum fundo de investimentos;",
+        en: "- Develop new habits, such as setting aside the money you gambled in a month and depositing it into an investment fund;"
+    },
+    "p8-parar-apostar": {
+        pt: "- Realizar atividades que te façam esquecer da possibilidade de apostar.",
+        en: "- Engage in activities that make you forget about the possibility of gambling."
+    },
+    "direitos-apostas": {
+        pt: "2024 - Todos os direitos reservados.",
+        en: "2024 - All rights reserved."
+    }
+};
+
+let currentLanguage = "pt";
+
+translateButton.addEventListener("click", () => {
+    currentLanguage = currentLanguage === "pt" ? "en" : "pt";
+    for (const [id, translations] of Object.entries(elementsToTranslate)) {
+        const element = document.getElementById(id);
+        if (element) {
+            element.textContent = translations[currentLanguage];
+        }
+    }
+});
+
+    </script>
+</body>
+</html>

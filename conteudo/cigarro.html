@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malefícios do Cigarro</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header> 
+        <nav>
+            <ul>
+                <li><a href="/index.html">Início</a></li>
+                <li><a href="sobrenos.html">Sobre Nós</a></li>
+                <li><a href="alcool.html">Vício em Álcool</a></li>
+                <li><a href="cigarro.html">Vício em Cigarro</a></li>
+                <li><a href="apostas.html">Vício em Apostas</a></li>
+                <li><a href="drogas.html">Vício em Drogas</a></li>
+                <li><a href="redes-sociais.html">Vício em Redes Sociais</a></li>
+                <li><a href="referencias.html">Referências</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="cigarro">
+        <div class="container">
+            <button id="translateButton">Traduzir</button>
+            <h1 id="titulo-cigarro">Malefícios do Cigarro</h1>
+            <p id="desc-malef-cigarro">O vício em cigarro é um dos maiores problemas de saúde no mundo...</p>
+            <div class="content">
+                <img src="imagens/cigarro real.jpeg" alt="Imagem de cigarro" class="imagem-cigarro">
+                <div class="texto">
+                    <h2 id="malef-cigarro">Malefícios do Cigarro</h2>
+                    <p id="principais-malef-cigarro">Os principais malefícios do cigarro incluem:</p>
+                    <p id="p1-malef-cigarro">Doenças pulmonares, como tuberculose e bronquite;</p>
+                    <p id="p2-malef-cigarro">Câncer de pulmão e outras formas de câncer;</p>
+                    <p id="p3-malef-cigarro">Problemas cardíacos, como ataques cardíacos e pressão alta;</p>
+                    <p id="p4-malef-cigarro">Envelhecimento precoce da pele;</p>
+                    <p id="p5-malef-cigarro">Problemas respiratórios graves;</p>
+                    <p id="p6-malef-cigarro">Dependência enorme à nicotina.</p>
+
+                    <h2 id="efeitos-cigarro">Efeitos no Cérebro</h2>
+                    <p id="p1-efeito-cigarro">Dependência química pela nicotina;</p>
+                    <p id="p2-efeito-cigarro">Alterações de humor e ansiedade;</p>
+                    <p id="p3-efeito-cigarro">Redução da memória e raciocínio lógico;</p>
+                    <p id="p4-efeito-cigarro">Aumento do estresse em situações de abstinência.</p>
+
+                    <h2 id="parar-fumar">Como Parar de Fumar</h2>
+                    <p id="p1-parar-fumar">Reconhecer o problema e querer mudar;</p>
+                    <p id="p2-parar-fumar">Procurar ajuda médica, com terapias e medicamentos;</p>
+                    <p id="p3-parar-fumar">Praticar exercícios físicos e manter hábitos saudáveis;</p>
+                    <p id="p4-parar-fumar">Participar de grupos de apoio, e conversar com pessoas sobre seu vício;</p>
+                    <p id="p5-parar-fumar">Evitar situações que possam desencadear o desejo de fumar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p id="rodape">2024 - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        let currentLanguage = "pt"; // idioma padrão
+
+        const translateButton = document.getElementById("translateButton");
+        translateButton.addEventListener("click", () => {
+            currentLanguage = currentLanguage === "pt" ? "en" : "pt"; // alterna entre os idiomas
+
+            const translations = {
+                pt: {
+                    "titulo-cigarro": "Malefícios do Cigarro",
+                    "desc-malef-cigarro": "O vício em cigarro é um dos maiores problemas de saúde no mundo...",
+                    "malef-cigarro": "Malefícios do Cigarro",
+                    "principais-malef-cigarro": "Os principais malefícios do cigarro incluem:",
+                    "p1-malef-cigarro": "Doenças pulmonares, como tuberculose e bronquite;",
+                    "p2-malef-cigarro": "Câncer de pulmão e outras formas de câncer;",
+                    "p3-malef-cigarro": "Problemas cardíacos, como ataques cardíacos e pressão alta;",
+                    "p4-malef-cigarro": "Envelhecimento precoce da pele;",
+                    "p5-malef-cigarro": "Problemas respiratórios graves;",
+                    "p6-malef-cigarro": "Dependência enorme à nicotina.",
+                    "efeitos-cigarro": "Efeitos no Cérebro",
+                    "p1-efeito-cigarro": "Dependência química pela nicotina;",
+                    "p2-efeito-cigarro": "Alterações de humor e ansiedade;",
+                    "p3-efeito-cigarro": "Redução da memória e raciocínio lógico;",
+                    "p4-efeito-cigarro": "Aumento do estresse em situações de abstinência.",
+                    "parar-fumar": "Como Parar de Fumar",
+                    "p1-parar-fumar": "Reconhecer o problema e querer mudar;",
+                    "p2-parar-fumar": "Procurar ajuda médica, com terapias e medicamentos;",
+                    "p3-parar-fumar": "Praticar exercícios físicos e manter hábitos saudáveis;",
+                    "p4-parar-fumar": "Participar de grupos de apoio, e conversar com pessoas sobre seu vício;",
+                    "p5-parar-fumar": "Evitar situações que possam desencadear o desejo de fumar.",
+                    "rodape": "2024 - Todos os direitos reservados."
+                },
+                en: {
+                    "titulo-cigarro": "The Harmful Effects of Cigarettes",
+                    "desc-malef-cigarro": "Cigarette addiction is one of the biggest health problems in the world...",
+                    "malef-cigarro": "Harmful Effects of Cigarettes",
+                    "principais-malef-cigarro": "The main harmful effects of cigarettes include:",
+                    "p1-malef-cigarro": "Lung diseases, such as tuberculosis and bronchitis;",
+                    "p2-malef-cigarro": "Lung cancer and other forms of cancer;",
+                    "p3-malef-cigarro": "Heart problems, such as heart attacks and high blood pressure;",
+                    "p4-malef-cigarro": "Premature skin aging;",
+                    "p5-malef-cigarro": "Severe respiratory problems;",
+                    "p6-malef-cigarro": "Huge nicotine dependence.",
+                    "efeitos-cigarro": "Effects on the Brain",
+                    "p1-efeito-cigarro": "Chemical dependency from nicotine;",
+                    "p2-efeito-cigarro": "Mood swings and anxiety;",
+                    "p3-efeito-cigarro": "Memory and reasoning reduction;",
+                    "p4-efeito-cigarro": "Increased stress during withdrawal situations.",
+                    "parar-fumar": "How to Quit Smoking",
+                    "p1-parar-fumar": "Recognize the problem and want to change;",
+                    "p2-parar-fumar": "Seek medical help, with therapies and medications;",
+                    "p3-parar-fumar": "Exercise and maintain healthy habits;",
+                    "p4-parar-fumar": "Join support groups and talk to people about your addiction;",
+                    "p5-parar-fumar": "Avoid situations that may trigger the desire to smoke.",
+                    "rodape": "2024 - All rights reserved."
+                }
+            };
+
+            // Atualiza o texto dos elementos com base na tradução escolhida
+            for (const [id, text] of Object.entries(translations[currentLanguage])) {
+                const element = document.getElementById(id);
+                if (element) {
+                    element.textContent = text;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
